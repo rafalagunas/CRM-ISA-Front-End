@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NotFound from './pages/public/NotFound';
 import RouteProtector from './pages/private/RouteProtector';
 import AuthGuard from './guards/auth.guard';

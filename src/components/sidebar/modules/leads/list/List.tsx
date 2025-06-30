@@ -11,7 +11,7 @@ import {
   Trash2,
   Star,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../ui/Button";
 import "./styles/Listado.css";
 
 interface Lead {
@@ -90,21 +90,11 @@ const mockLeads: Lead[] = [
   },
 ];
 
-const statusColors = {
-  nuevo: "bg-blue-100 text-blue-800",
-  contactado: "bg-yellow-100 text-yellow-800",
-  calificado: "bg-green-100 text-green-800",
-  convertido: "bg-purple-100 text-purple-800",
-};
 
-const getScoreColor = (score: number) => {
-  if (score >= 80) return "text-green-600";
-  if (score >= 60) return "text-yellow-600";
-  return "text-red-600";
-};
+
 
 export default function Listado() {
-  const [leads, setLeads] = useState<Lead[]>(mockLeads);
+  const [leads] = useState<Lead[]>(mockLeads);
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState<string>("todos");
   const [sourceFilter, setSourceFilter] = useState<string>("todos");

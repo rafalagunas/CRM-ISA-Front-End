@@ -172,14 +172,14 @@ const developerItems = [
 
 interface MenuItemProps {
   title: string;
-  icon: React.ComponentType;
+  icon: any;
   url: string;
   badge?: string;
   isActive: boolean;
   isCollapsed: boolean;
   subItems?: Array<{
     title: string;
-    icon: React.ComponentType;
+    icon: any;
     url: string;
   }>;
 }

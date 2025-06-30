@@ -4,11 +4,10 @@ import {
   Upload,
   Download,
   FileText,
-  Users,
   AlertCircle,
   CheckCircle,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../ui/Button";
 import "./styles/Crear.css";
 
 export default function Crear() {
